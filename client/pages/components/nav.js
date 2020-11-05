@@ -2,8 +2,8 @@ const nav =
 `
 <nav>
     <ul>
-        <li><button>Dashboard</button></li>
-        <li><button>Profilo</button></li>
+        <li><a href = "/#/Dashboard" >Dashboard</a></li>
+        <li><a href=  "/#/Home">Home</a></li>
     </ul>
     <div class="user">
         <div class="profile-image">

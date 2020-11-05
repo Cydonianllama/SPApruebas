@@ -1,17 +1,13 @@
-const footer = require('./components/footer'); 
-const nav = require('./components/nav');
+const footer = require('./components/footer').footer; 
+const nav = require('./components/nav').nav;
 
 const body =
 `
-${nav.nav}
+${nav}
 <div class="container">
     <h2>Soy el cuerpo</h2>
 </div>
-${footer.footer}
+${footer}
 `;
 
-async function loadTemplate(root){
-    return body;
-}
-
-module.exports = {loadTemplate,body};
+module.exports = {body};

@@ -1,19 +1,10 @@
-var home = require('./pages/Home');
-const root = document.getElementById('root');
+const router = require('./utils/router');
 
-async function render(template) {
-    async function getTemplate(data) {
-        let template_ = await data.loadTemplate();
-        return template_
-    }
-    let forender = await getTemplate(template);
-    root.innerHTML = forender;
+function listenerRoutes(){
+    console.log(window.location.hash);
 }
 
-window.addEventListener('load',()=>{
-    console.log('load page');
-    history.pushState({id : 'asdasd'},'Home', '/home');
-    render(home);
-})
-
-  
+window.addEventListener("hashchange", () => {
+    router.render(window.location.hash);
+    listenerRoutes();
+});
