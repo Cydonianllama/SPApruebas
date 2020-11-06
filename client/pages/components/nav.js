@@ -1,9 +1,9 @@
 const nav = 
 `
-<nav>
+<nav class="nav-main">
     <ul>
-        <li><a href = "/#/Dashboard" >Dashboard</a></li>
-        <li><a href=  "/#/Home">Home</a></li>
+        <li><a href=  "/#/Home" class="a-home">Home</a></li>
+        <li><a href = "/#/Dashboard" class="a-dashboard">Dashboard</a></li>
     </ul>
     <div class="user">
         <div class="profile-image">

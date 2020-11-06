@@ -4,7 +4,7 @@ const footer = require('../pages/components/footer').footer;
 const Dashboard = 
 `
 ${nav}
-<h2>Estoy en el dashboard</h2>
+<div class = "body-dashboard"></div>
 ${footer}
 `;
 
