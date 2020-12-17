@@ -2,11 +2,11 @@ const nav =
 `
 <nav class="nav-main">
     <ul>
-        <li><a href=  "/#/Home" class="a-home">Home</a></li>
-        <li><a href = "/#/Dashboard" class="a-dashboard">Dashboard</a></li>
+        <li><a href=  "/#Home" class="a-home">Home</a></li>
+        <li><a href = "/#Dashboard" class="a-dashboard">Dashboard</a></li>
     </ul>
-    <div class="user">
-        <div class="profile-image">
+    <div class="user-profile">
+        <div class="avatar-user">
 
         </div>
         <div class="profile-actions">

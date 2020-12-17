@@ -1,20 +1,18 @@
 const routes = require('./routes');
 const root = document.getElementById('root');
-
-function clghash(url){
-    console.log(url);
-}
-
 function render(url){
     let template = `<h2>NULL</h2>`;
-    clghash(url);
     root.innerHTML = template;
     switch(url){
-        case '#/Home':
+        case '#Login' : 
+            template = routes["/Login"];
+            root.innerHTML = template;
+            break;
+        case '#Home':
             template = routes["/Home"]; 
             root.innerHTML = template;
             break;
-        case '#/Dashboard': 
+        case '#Dashboard': 
             template = routes["/Dashboard"]; 
             root.innerHTML = template;
             break;

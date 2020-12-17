@@ -2,14 +2,14 @@ const path = require('path');
 
 module.exports = {
     output: {
-        path: path.resolve(__dirname, '/public'),
+        path: path.resolve(__dirname,'dist'),
         filename: 'app.js'
     },
     entry: {
-        main: './client/main.js'
+        main: path.resolve(__dirname,'src','client','main.js')
     },
     devServer : {
-        contentBase : path.resolve(__dirname,'public'),
+        contentBase : path.resolve(__dirname,'dist'),
         historyApiFallback : true,
         port :5000
     }
